@@ -110,7 +110,7 @@ export class CodeViewerComponent implements OnInit, OnChanges, AfterViewChecked 
     @Input() useBr: boolean;
     @Input() code: string;
     @Input() language: string;
-    @ViewChild('codeView') codeView: ElementRef;
+    @ViewChild('codeView',{static: true}) codeView: ElementRef;
     private needUpdate: boolean;
 
     constructor(private elementRef: ElementRef) {}
