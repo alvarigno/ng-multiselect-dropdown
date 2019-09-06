@@ -30,7 +30,7 @@ export class MultiSelectComponent implements ControlValueAccessor {
   public _data: Array<ListItem> = [];
   public selectedItems: Array<ListItem> = [];
   public isDropdownOpen = true;
-  _placeholder = 'Select';
+  _placeholder = 'Seleccionar';
   filter: ListItem = new ListItem(this.data);
   defaultSettings: IDropdownSettings = {
     singleSelection: false,
@@ -38,15 +38,15 @@ export class MultiSelectComponent implements ControlValueAccessor {
     textField: 'text',
     disabledField: 'isDisabled',
     enableCheckAll: true,
-    selectAllText: 'Select All',
-    unSelectAllText: 'UnSelect All',
+    selectAllText: 'Seleccionar Todo',
+    unSelectAllText: 'Borrar selección',
     allowSearchFilter: false,
     limitSelection: -1,
     clearSearchFilter: true,
     maxHeight: 197,
     itemsShowLimit: 999999999999,
     searchPlaceholderText: 'Buscar',
-    noDataAvailablePlaceholderText: 'No data available',
+    noDataAvailablePlaceholderText: 'No hay datos disponibles',
     closeDropDownOnSelection: false,
     showSelectedItemsAtTop: false,
     defaultOpen: false

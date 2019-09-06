@@ -112,8 +112,8 @@ export class MultipleDemoComponent implements OnInit {
       defaultOpen: false,
       idField: 'item_id',
       textField: 'item_text',
-      selectAllText: 'Seleccionar todo',
-      unSelectAllText: 'des-seleccionar All',
+      selectAllText: '', //Seleccionar todo
+      unSelectAllText: '', //Des-Seleccionar todo
       enableCheckAll: this.showAll,
       itemsShowLimit: 3,
       allowSearchFilter: this.ShowFilter
