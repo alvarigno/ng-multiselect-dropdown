@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { TabsModule, ButtonsModule } from 'ngx-bootstrap';
 import { NgMultiSelectDropDownModule } from '../ng-multiselect-dropdown/src';
@@ -14,6 +15,11 @@ import { ShCodeViewer } from '../code-viewer/code-viewer.module';
 
 import { AppComponent } from './app.component';
 
+// Components
+import { EmployeeCreateComponent } from './employee-create/employee-create.component';
+import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
+import { EmployeesListComponent } from './employees-list/employees-list.component';
+
 @NgModule({
   declarations: [SelectSectionComponent, SampleSectionComponent, SingleDemoComponent, MultipleDemoComponent, AppComponent],
   imports: [
@@ -23,7 +29,8 @@ import { AppComponent } from './app.component';
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
     NgMultiSelectDropDownModule.forRoot(),
-    ShCodeViewer
+    ShCodeViewer,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
